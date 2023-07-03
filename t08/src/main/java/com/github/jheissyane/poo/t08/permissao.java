@@ -1,17 +1,17 @@
-package com.github.konojoao.poo.t08;
+package com.github.jheissyane.poo.t08;
 
-public class Permissao{
+public class Permissaoacesso{
 }
 
 public class Usuario{
 }
 
 public class Arquivo{
-private Permissao permissao;
+private Permissaoacesso permissao;
 }
 
 public class Grupo{
-private Permissao permissao;
+private Permissaoascesso permissao;
 private Usuario[] usuarios;
 }
 
