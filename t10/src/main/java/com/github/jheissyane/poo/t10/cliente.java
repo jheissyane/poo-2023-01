@@ -1,40 +1,40 @@
-package com.github.konojoao.main.t10;
+package com.github.jheissyane.main.t10;
 
-class Cliente{
+class Cliente {
     private String nome;
-    private Demanda problema;
+    private Pedido pedido;
     private Bicicleta bicicleta;
 
-    public void cadastrarCliente(){
-        cliente = new Cliente();
+    public void cadastrarCliente() {
+        Cliente cliente = new Cliente();
         this.cadastrarCliente("João", "Bicicleta com problema no freio", "Caloi", "Azul", 500);
     }
 
-    public void cadastrarCliente(String nome, String descricao, String modelo, String cor, float preco){
+    public void cadastrarCliente(String nome, String descricao, String modelo, String cor, float preco) {
         this.nome = nome;
-        this.problema = new Demanda();
-        this.problema.DefinirDemanda(descricao);
+        this.pedido = new Pedido();
+        this.pedido.definirDescricao(descricao);
         this.bicicleta = new Bicicleta();
-        this.bicicleta.DescricaoBicicleta(modelo, cor, preco);
+        this.bicicleta.definirDescricao(modelo, cor, preco);
     }
 }
 
-class Bicicleta{
+class Bicicleta {
     private String modelo;
     private String cor;
     private float preco;
 
-    public void DescricaoBicicleta(String modelo, String cor, float preco){
+    public void definirDescricao(String modelo, String cor, float preco) {
         this.modelo = modelo;
         this.cor = cor;
         this.preco = preco;
     }
 }
 
-class Demanda{
+class Pedido {
     private String descricao;
 
-    public void DefinirDemanda(String descricao){
+    public void definirDescricao(String descricao) {
         this.descricao = descricao;
     }
 }
