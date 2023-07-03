@@ -1,4 +1,4 @@
-package java.com.github.konojoao.poo.t09;
+package java.com.github.jheissyane.poo.t09;
 
 public class Usuario extends Pessoa{
 

@@ -1,9 +1,8 @@
-package com.github.konojoao.poo.t08;
+package com.github.jheissyane.poo.t08;
 
 public class Ponto{
 
 }
-
 public class Curva extends Ponto{
     private Ponto[] ponto;
 }

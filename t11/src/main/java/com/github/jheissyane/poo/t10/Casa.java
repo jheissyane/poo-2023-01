@@ -1,39 +1,64 @@
-package com.github.jheissyane.main.t10;
+package com.github.jheissyane.poo.t11;
 
-class Cliente {
-    private String pessoa;
-    private Demanda requisito;
-    private Bicicleta bicicleta;
+import java.util.ArrayList;
+import java.util.List;
 
-    public void cadastrarCliente() {
-        cadastrarCliente("Felipe", "Bicicleta com pneu furado", "Specialized", "Vermelha", 500);
-    }
+class Comodo {
 
-    public void cadastrarCliente(String pessoa, String descricao, String marca, String cor, float preco) {
-        this.pessoa = pessoa;
-        this.requisito = new Demanda();
-        this.requisito.definirDescricao(descricao);
-        this.bicicleta = new Bicicleta();
-        this.bicicleta.definirDescricao(marca, cor, preco);
-    }
 }
 
-class Bicicleta {
-    private String marca;
-    private String cor;
-    private float preco;
+class Banheiro extends Comodo {
 
-    public void definirDescricao(String marca, String cor, float preco) {
-        this.marca = marca;
-        this.cor = cor;
-        this.preco = preco;
-    }
 }
 
-class Demanda {
-    private String descricao;
+class Quarto extends Comodo {
 
-    public void definirDescricao(String descricao) {
-        this.descricao = descricao;
+}
+
+class Sala extends Comodo {
+
+}
+
+class Garagem extends Comodo {
+
+}
+
+class Area {
+
+}
+
+public class Casa {
+    private List<Quarto> quartos;
+    private List<Banheiro> banheiros;
+    private List<Sala> salas;
+    private List<Area> areas;
+    private List<Garagem> garagens;
+
+    public Casa() {
+        quartos = new ArrayList<>();
+        banheiros = new ArrayList<>();
+        salas = new ArrayList<>();
+        areas = new ArrayList<>();
+        garagens = new ArrayList<>();
+    }
+
+    public void adicionarQuarto(Quarto quarto) {
+        quartos.add(quarto);
+    }
+
+    public void adicionarBanheiro(Banheiro banheiro) {
+        banheiros.add(banheiro);
+    }
+
+    public void adicionarSala(Sala sala) {
+        salas.add(sala);
+    }
+
+    public void adicionarArea(Area area) {
+        areas.add(area);
+    }
+
+    public void adicionarGaragem(Garagem garagem) {
+        garagens.add(garagem);
     }
 }
