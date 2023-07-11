@@ -1,22 +1,22 @@
 package com.github.jheissyane.poo.t10;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Oficina {
+    private String nome;
+    private String endereco;
+    private Proprietario proprietario;
 
-public class OficinaBicicletas {
-    private List<Bicicleta> bicicletas;
-    private List<Percurso> percursos;
-
-    public OficinaBicicletas() {
-        bicicletas = new ArrayList<>();
-        percursos = new ArrayList<>();
+    public Oficina(String nome, String endereco, Proprietario proprietario) {
+        this.nome = nome;
+        this.endereco = endereco;
+        this.proprietario = proprietario;
     }
 
-    public void adicionarBicicleta(Bicicleta bicicleta) {
-        bicicletas.add(bicicleta);
+    
+    public void realizarManutencao(Bike bike) {
+     
     }
 
     public void organizarPercurso(Percurso percurso) {
-        percursos.add(percurso);
+       
     }
 }

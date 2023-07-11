@@ -1,9 +1,4 @@
-package java.com.github.jheissyane.poo.t09;
-
-public class Elefante extends Mamifero{
-
-}
-
+package com.github.jheissyane.poo.t09;
 public class Mamifero{
 
 }
